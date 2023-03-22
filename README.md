@@ -20,7 +20,7 @@ The data directory for MySQL.
 ## Booting
 
 ### Command to Start
-	docker run -p 8080:8080 iplass/iplass-standalone
+	docker run -p 8080:8080 ghcr.io/iplass/iplass-standalone
 
 ## How to use
 Once the container was initiated, please access the following URL at your web browser.  
@@ -34,38 +34,38 @@ The following Tenant will be created in default.
 - Manager's user ID:'admin'
 - Manager's password:'password'
 
-To change the settings, please specify the followng environment variables.
+To change the settings, please specify the following environment variables.
 
 ## Environment Variables
-Please specify the environment virables in needs.
+Please specify the environment variables in needs.
 
 - IPLASS_MYSQL_ROOT_PASSWORD  
 Change MySQL's root user's password.  
-Defualt:'root'
+Default:'root'
 
 - IPLASS_DB_USER  
 Specify the username of the database user for iPLAss.  
-Defualt:'mtpusr'
+Default:'mtpusr'
 
 - IPLASS_DB_PASSWORD  
 Specify the password of the database user for iPLAss.  
 Default:'mtpusr'
 
 - IPLASS_TENANT_NAME  
-Specify the tenant name for the intial tenant.  
+Specify the tenant name for the initial tenant.  
 Default:'myTenant'
 
 - IPLASS_TENANT_ADMIN_ID  
 Specify the initial tenant manager's user ID.  
 Default:'admin'
 
-  user ID have to be more than 4 characters, and only contains Enligh chacaters, numbers, and special character [-](minus)[@] [_] [.](period).
+  user ID have to be more than 4 characters, and only contains English characters, numbers, and special character [-](minus)[@] [_] [.](period).
 
 - IPLASS_TENANT_ADMIN_PASSWORD  
 Specify the initial tenant manager's password.  
 Default:'password'
 
-  password have to be more than 6 characters and only contains English chacaters and numbers.
+  password have to be more than 6 characters and only contains English characters and numbers.
 
 - IPLASS_BINARY_STORE_DIR  
 Specify the directory to store the binary data files.  
@@ -101,7 +101,7 @@ MySQLのデータディレクトリです。
 ## 起動
 
 ### 起動コマンド
-	docker run -p 8080:8080 iplass/iplass-standalone
+	docker run -p 8080:8080 ghcr.io/iplass/iplass-standalone
 
 ## 使用方法
 コンテナ起動後、Webブラウザで次のURLにアクセスしてください。  
