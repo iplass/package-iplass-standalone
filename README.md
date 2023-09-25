@@ -80,7 +80,8 @@ Default:'Asia/Tokyo'
   for 3.0.9 or older versions, the timezone specified should be similar to the timezone by 「default-time-zone」 from $IPLASS_HOME/mysql.cnf
 
 ### 3.1.36 or later, 3.2.11 or later versions
-If you are using 3.1.36 or later or 3.2.11 or later versions, the following environment variables are available.
+If you are using 3.1.36 or later or 3.2.11 or later versions, the following environment variables are available.  
+If a reverse proxy is applied to your environment, please change the proxy-related settings accordingly.
 
 - `TOMCAT_CONNECTOR_HTTP_PORT`  
   default value: `8080`  
@@ -188,7 +189,8 @@ iPLAssのデータベースユーザのパスワードを指定します。
   3.0.9以前を利用の場合は指定したタイムゾーンと$IPLASS_HOME/mysql.cnfの「default-time-zone」で指定するタイムゾーンを一致させてください。
 
 ### 3.1.36 以降、3.2.11 以降 のバージョン
-3.1.36 以降、3.2.11 以降のバージョンを利用している場合は、以下の環境変数を利用することが可能です。
+3.1.36 以降、3.2.11 以降のバージョンを利用している場合は、以下の環境変数を利用することが可能です。  
+リバースプロキシが適用されている環境の場合はプロキシに関連する設定を適宜変更ください。
 
 - `TOMCAT_CONNECTOR_HTTP_PORT`  
   デフォルト値: `8080`  
